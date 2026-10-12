@@ -6,15 +6,13 @@ A Claude Code mod that shows your task list in a box above the prompt, with a pr
 
 ## Install
 
-1. Clone it:
-   ```bash
-   git clone git@github.com:jatinmayekar/claude-task-list.git ~/mods/task-list
-   ```
-2. Load it in every session by adding this to `~/.claude/settings.json` (separate multiple mod dirs with `:`):
-   ```json
-   "env": { "CLAUDE_CODE_PLUGIN_DIRS": "/home/<you>/mods/task-list" }
-   ```
-3. Restart Claude Code.
+Needs Claude Code 2.1.287 or later. In Claude Code, run:
+
+```
+/plugin install task-list --marketplace jatinmayekar/claude-task-list
+```
+
+Then run `/reload-plugins`, or restart Claude Code.
 
 ## Use
 
