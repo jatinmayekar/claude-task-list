@@ -2,6 +2,8 @@
 
 A Claude Code mod that shows your task list in a box above the prompt, with a progress bar and ✓ for finished tasks. Tasks persist across sessions.
 
+![Task list above the Claude Code prompt](docs/screenshot.png)
+
 ## Install
 
 1. Clone it:
