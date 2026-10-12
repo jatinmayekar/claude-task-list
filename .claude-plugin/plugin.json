@@ -2,5 +2,8 @@
   "name": "task-list",
   "version": "0.1.0",
   "description": "Shows your task list above the prompt; manage it with /task",
-  "types": "./types/index.d.ts"
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Jatin Mayekar"
+  }
 }

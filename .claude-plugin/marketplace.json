@@ -1,5 +1,13 @@
 {
   "name": "jatinmayekar",
-  "owner": { "name": "Jatin Mayekar" },
-  "plugins": [{ "name": "task-list", "source": "./" }]
+  "owner": {
+    "name": "Jatin Mayekar"
+  },
+  "plugins": [
+    {
+      "name": "task-list",
+      "source": "./"
+    }
+  ],
+  "description": "Task list above the Claude Code prompt, managed with /task"
 }
