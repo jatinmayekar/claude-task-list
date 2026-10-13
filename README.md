@@ -31,9 +31,14 @@ Your tasks are saved locally in the plugin's own store on your machine. The mod 
 ## Develop
 
 ```bash
-claude plugin validate ~/mods/task-list
-claude plugin test ~/mods/task-list
+git clone https://github.com/jatinmayekar/claude-task-list && cd claude-task-list
+claude plugin validate .
+claude plugin test .
 ```
+
+## Support
+
+Report bugs or ask questions in [GitHub Issues](https://github.com/jatinmayekar/claude-task-list/issues).
 
 ## License
 

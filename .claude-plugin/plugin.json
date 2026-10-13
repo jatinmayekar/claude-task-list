@@ -10,5 +10,15 @@
   "homepage": "https://github.com/jatinmayekar/claude-task-list",
   "repository": "https://github.com/jatinmayekar/claude-task-list",
   "license": "MIT",
-  "icon": "./.claude-plugin/icon.png"
+  "icon": "./.claude-plugin/icon.png",
+  "keywords": [
+    "tasks",
+    "todo",
+    "productivity",
+    "prompt",
+    "mod"
+  ],
+  "supportUrl": "https://github.com/jatinmayekar/claude-task-list/issues",
+  "documentationUrl": "https://github.com/jatinmayekar/claude-task-list#readme",
+  "privacyPolicyUrl": "https://github.com/jatinmayekar/claude-task-list#data-and-privacy"
 }
