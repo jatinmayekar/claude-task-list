@@ -24,6 +24,12 @@ Then run `/reload-plugins`, or restart Claude Code.
 | `/task clear` | Remove finished tasks |
 | `/task hide` / `/task show` | Hide or show the box |
 
+## Examples
+
+1. **Plan a session:** `/task add fix login bug`, `/task add write tests`, `/task add open PR`. The box shows all three with a 0/3 progress bar.
+2. **Track progress as you go:** `/task done 1 - fixed in auth.ts` ticks task 1 and the bar moves to 1/3. Run it again to undo.
+3. **Tidy up:** `/task clear` removes finished tasks, and `/task hide` gets the box out of the way for a screen share. `/task show` brings it back.
+
 ## Data and privacy
 
 Your tasks are saved locally in the plugin's own store on your machine. The mod makes no network requests, runs no shell commands, and sends nothing anywhere. It registers one slash command, `/task`, and handles that command itself. It hooks the `command.run` event only for `/task` and passes every other command through unchanged. It also draws the box above the prompt. The box shows in the terminal and the Desktop Code tab.
