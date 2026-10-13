@@ -5,5 +5,9 @@
   "types": "./types/index.d.ts",
   "author": {
     "name": "Jatin Mayekar"
-  }
+  },
+  "displayName": "Task List",
+  "homepage": "https://github.com/jatinmayekar/claude-task-list",
+  "repository": "https://github.com/jatinmayekar/claude-task-list",
+  "license": "MIT"
 }

@@ -19,10 +19,14 @@ Then run `/reload-plugins`, or restart Claude Code.
 | Command | Does |
 |---|---|
 | `/task add <text>` | Add a task |
-| `/task done <n>` | Toggle task n done/undone |
+| `/task done <n> [note]` | Toggle task n done/undone |
 | `/task rm <n>` | Remove task n |
 | `/task clear` | Remove finished tasks |
 | `/task hide` / `/task show` | Hide or show the box |
+
+## Data and privacy
+
+Your tasks are saved locally in the plugin's own store on your machine. The mod makes no network requests, runs no shell commands, and sends nothing anywhere. It only draws the box above the prompt and answers `/task`. The box shows in the terminal and the Desktop Code tab.
 
 ## Develop
 
@@ -30,3 +34,7 @@ Then run `/reload-plugins`, or restart Claude Code.
 claude plugin validate ~/mods/task-list
 claude plugin test ~/mods/task-list
 ```
+
+## License
+
+MIT
