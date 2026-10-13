@@ -49,6 +49,7 @@ test('commands add, toggle, remove and persist tasks', async ($, on) => {
   await $.command.run(run('clear'))
   expect((await $.command.run(run(''))).text).toBe('1. [ ] flash the jetson')
   expect((await $.command.run(run('rm 5'))).text).toContain('No task #5')
+  expect((await $.command.run(run('done 1 - with a note'))).text).toContain('Toggled #1')
 })
 
 test('band above the prompt shows saved tasks and hides on request', async ($, on) => {

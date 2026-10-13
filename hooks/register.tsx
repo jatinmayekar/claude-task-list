@@ -52,7 +52,8 @@ export const register: Register = on => {
     const [verb = '', ...rest] = e.args.trim().split(/\s+/)
     const arg = rest.join(' ')
     const current = await read($, tasks)
-    const n = Number(arg)
+    // done/rm take the leading number; anything after it is a free-form note
+    const n = Number(rest[0])
     const isValidIndex = Number.isInteger(n) && n >= 1 && n <= current.length
 
     switch (verb.toLowerCase()) {
