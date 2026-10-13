@@ -5,7 +5,7 @@
   },
   "plugins": [
     {
-      "name": "task-list",
+      "name": "user-task-list",
       "source": "./"
     }
   ],

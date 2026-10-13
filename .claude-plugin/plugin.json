@@ -1,13 +1,14 @@
 {
-  "name": "task-list",
-  "version": "0.1.1",
-  "description": "Shows your task list above the prompt; manage it with /task",
+  "name": "user-task-list",
+  "version": "0.2.0",
+  "description": "Your own task list for Claude Code sessions, shown above the prompt and managed with /task",
   "types": "./types/index.d.ts",
   "author": {
     "name": "Jatin Mayekar"
   },
-  "displayName": "Task List",
+  "displayName": "User Task List",
   "homepage": "https://github.com/jatinmayekar/claude-task-list",
   "repository": "https://github.com/jatinmayekar/claude-task-list",
-  "license": "MIT"
+  "license": "MIT",
+  "icon": "./.claude-plugin/icon.png"
 }

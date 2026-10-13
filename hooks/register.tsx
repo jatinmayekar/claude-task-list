@@ -4,8 +4,8 @@ import type { EngineInterface, Register } from 'claude-code'
 import type { Task } from '../types'
 
 // Live copies the band redraws from; $.store keeps the tasks between sessions
-const tasks = atom({ plugin: 'task-list', key: 'tasks' } as const, [])
-const isHidden = atom({ plugin: 'task-list', key: 'isHidden' } as const, false)
+const tasks = atom({ plugin: 'user-task-list', key: 'tasks' } as const, [])
+const isHidden = atom({ plugin: 'user-task-list', key: 'isHidden' } as const, false)
 
 const HELP = [
   '/task add <text>   add a task',

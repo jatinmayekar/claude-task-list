@@ -57,11 +57,11 @@ test('band above the prompt shows saved tasks and hides on request', async ($, o
   await $.session.start(START)
 
   for (const surface of ['terminal', 'desktop'] as const) {
-    const band = await $.ui.mount({ plugin: 'task-list', surface, component: 'AbovePrompt', props: BAND })
+    const band = await $.ui.mount({ plugin: 'user-task-list', surface, component: 'AbovePrompt', props: BAND })
     expect(JSON.stringify(await band.drawn())).toContain('review the PR')
   }
 
   await $.command.run(run('hide'))
-  const hidden = await $.ui.mount({ plugin: 'task-list', surface: 'terminal', component: 'AbovePrompt', props: BAND })
+  const hidden = await $.ui.mount({ plugin: 'user-task-list', surface: 'terminal', component: 'AbovePrompt', props: BAND })
   expect(JSON.stringify(await hidden.drawn())).not.toContain('review the PR')
 })

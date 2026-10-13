@@ -1,6 +1,6 @@
-# task-list
+# User Task List
 
-A Claude Code mod that shows your task list in a box above the prompt, with a progress bar and ✓ for finished tasks. Tasks persist across sessions.
+A Claude Code mod that shows your own task list, the things you are working on in Claude Code, in a box above the prompt, with a progress bar and ✓ for finished tasks. Tasks persist across sessions.
 
 ![Task list above the Claude Code prompt](docs/screenshot.png)
 
@@ -9,7 +9,7 @@ A Claude Code mod that shows your task list in a box above the prompt, with a pr
 Needs Claude Code 2.1.287 or later. In Claude Code, run:
 
 ```
-/plugin install task-list --marketplace jatinmayekar/claude-task-list
+/plugin install user-task-list --marketplace jatinmayekar/claude-task-list
 ```
 
 Then run `/reload-plugins`, or restart Claude Code.
@@ -26,7 +26,7 @@ Then run `/reload-plugins`, or restart Claude Code.
 
 ## Data and privacy
 
-Your tasks are saved locally in the plugin's own store on your machine. The mod makes no network requests, runs no shell commands, and sends nothing anywhere. It only draws the box above the prompt and answers `/task`. The box shows in the terminal and the Desktop Code tab.
+Your tasks are saved locally in the plugin's own store on your machine. The mod makes no network requests, runs no shell commands, and sends nothing anywhere. It registers one slash command, `/task`, and handles that command itself. It hooks the `command.run` event only for `/task` and passes every other command through unchanged. It also draws the box above the prompt. The box shows in the terminal and the Desktop Code tab.
 
 ## Develop
 
